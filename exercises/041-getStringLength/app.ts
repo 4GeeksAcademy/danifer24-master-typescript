@@ -1,6 +1,11 @@
-function getStringLength(string: string): number {
+function getStringLength(string: string): string {
   // your code here
-  return 0;
+  let i = 0;
+  while (string.slice(i, i + 1) !== "") {
+    i++;
+  }
+  return i;
+
 }
 
 export {};

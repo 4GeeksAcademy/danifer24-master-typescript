@@ -1,6 +1,11 @@
-function extend(obj1: unknown, obj2: unknown): unknown[] {
+function extend(obj1: any, obj2: any): unknown[] {
   // your code here
-    return [];
+    for(let key in obj2){
+      if(!obj1[key]){
+        obj1[key] = obj2[key];
+      };
+    }
+    return obj1;
 }
 
 export {};

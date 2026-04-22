@@ -1,6 +1,6 @@
-function addToFrontOfNew(arr: unknown[], element: number): unknown[] {
+function addToFrontOfNew(arr: any[], element: number): unknown[] {
   // your code here
-  return [];
+  return [element].concat(arr);
 }
 
 export {};

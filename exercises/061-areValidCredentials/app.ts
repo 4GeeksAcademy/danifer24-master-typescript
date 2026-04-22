@@ -1,6 +1,8 @@
 function areValidCredentials(name: string, pass: string): boolean {
   // your code here
-  return false;
+  if(name.length <= 3) return false;
+  else if(pass.length < 8) return false;
+  return true;
 }
 
 export {};

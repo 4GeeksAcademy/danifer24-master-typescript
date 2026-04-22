@@ -1,6 +1,12 @@
 function countCharacter(str: string, char: string): number {
   // your code here
-  return 0;
+  let contador: number = 0;
+  for(let i = 0; i < str.length; i++){
+    if(str.charAt(i) === char){
+      contador++;
+    }
+  }
+  return contador;
 }
 
 export {};
